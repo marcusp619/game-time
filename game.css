@@ -1,12 +1,46 @@
 body {
   background: url(img/game_background_1.png) no-repeat center center fixed;
   background-size: cover;
-
+  font-family: 'Open Sans', sans-serif;
+  
 }
 
 
+/**** Canvas ****/
 #game {
+  background-color: rgba(255, 255, 255, 0.3);
   border: 1px dashed;
   margin: auto;
   display: block;
+}
+
+/**** Header ****/
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header__title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3em;
+  animation: fadeinout 2.5s infinite alternate ease-in-out;
+}
+
+/**** Game Section ****/
+.game {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+/*** Animation ***/ 
+@keyframes fadeinout {
+  0% {
+    text-shadow: 0 0 10px transparent;
+    color: #3FDEEC;
+  }
+
+  100% {
+    text-shadow: 0 28px 50px rgba(0, 0, 0, 0.8);
+    color: white;
+  }
 }
