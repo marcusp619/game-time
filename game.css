@@ -32,6 +32,17 @@ body {
   justify-items: center;
 }
 
+/**** Scoreboard & Lives ****/
+.game__scoreboard,
+.game__lives {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 28px 50px rgba(0, 0, 2, 0.2);
+  font-family: 'Press Start 2P', cursive;
+  height: 200px;
+  text-align: center;
+  width: 300px;
+}
+
 /*** Animation ***/ 
 @keyframes fadeinout {
   0% {
