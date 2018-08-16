@@ -11,12 +11,12 @@
       <h1 class="header__title">Snake</h1>
     </header>
     <section class="game">
-      <div class="game__scoreboard">
+      <div class="game__scoreboard container">
         <h2>Score</h2>
-        <h3>100</h3>
+        <h2 id="score-display">100</h3>
       </div>
-      <canvas id="game" width="500" height="500"></canvas>    
-      <div class="game__lives">
+      <canvas id="game" class="canvas container" width="500" height="500"></canvas>    
+      <div class="game__lives container">
         <h2>Lives</h2>
         <div class="game__hearts">
           <img class="game__heart" src="img/Heart.png" alt="heart representing one life">
@@ -25,6 +25,7 @@
         </div>
       </div>
     </section>
+      <button class="play-btn container">PLAY</button>
   <script src="main.bundle.js"></script>
 </body>
 </html>

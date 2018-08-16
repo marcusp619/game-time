@@ -10,7 +10,7 @@ body {
 #game {
   background-color: rgba(255, 255, 255, 0.3);
   border: 1px dashed;
-  margin: auto;
+  margin: 0;
   display: block;
 }
 
@@ -29,7 +29,25 @@ body {
 .game {
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: space-around;
+}
+
+.play-btn {
+	align-items: center;
+	/*color: #EB4238;*/
+	animation: playbutton 2.5s infinite alternate ease-in-out;
+	background-color: #FFF;
+	display: flex;
+	font-family: 'Press Start 2P', cursive;
+  font-size: 3em;
+	justify-content: center;
+	margin: 1.5rem auto 0;
+	padding: 0.5rem 0;
+  width: 500px;
+}
+
+.container {
+	border-radius: 20px;
 }
 
 /**** Scoreboard & Lives ****/
@@ -53,7 +71,8 @@ body {
 
  .game__heart {
   animation: heartbeat 1.0s infinite alternate ease-in-out; 
- }
+  width: 2.5rem;
+}
 
 /*** Animation ***/ 
 @keyframes fadeinout {
@@ -68,6 +87,18 @@ body {
   }
 }
 
+@keyframes playbutton {
+	0% {
+		text-shadow: 0 0 10px transparent;
+		color: #9D3832; 
+	}
+
+	100% {
+		text-shadow: 0 28px 50px rgba(0, 0, 0, 0.8);
+		color: #EB4238;
+	}
+}
+
 @keyframes heartbeat {
   from {
     transform: scale(0.9);
@@ -77,3 +108,27 @@ body {
   }
 }
 
+/*** Media Queries ***/
+@media (max-width: 1175px) {
+	.game {
+  	justify-items: space-between;
+	}
+
+	.game__scoreboard,
+	.game__lives {
+		width: 250px;
+	}
+
+
+}
+
+@media (max-width: 1050px) {
+	.game__scoreboard,
+	.game__lives {
+		width: 200px;
+	}
+ .game__heart {
+ 	width: 2rem;
+ }
+
+}
