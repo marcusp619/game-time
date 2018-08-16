@@ -38,10 +38,17 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 28px 50px rgba(0, 0, 2, 0.2);
   color: #301E42;
+  display: grid;
   font-family: 'Press Start 2P', cursive;
+  grid-template-rows: 1fr 1fr;
   height: 200px;
   text-align: center;
   width: 300px;
+}
+
+/**** Lives ****/
+.game__lives {
+  justify-content: center;
 }
 
 /*** Animation ***/ 
