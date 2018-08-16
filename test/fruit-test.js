@@ -8,9 +8,9 @@ describe('Fruit', () => {
 	});
 
 	it('should have a default height and a width', () => {
-		var fruit = new Fruit();
+		var fruit = new Fruit(100, 100, 10, 10, 'green', 'green');
 		assert.equal(fruit.height, 10);
-		assert.equal(fruit.height, 10);
+		assert.equal(fruit.width, 10);
 	});
 
 
