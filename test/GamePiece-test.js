@@ -5,7 +5,7 @@ describe('GamePiece', () => {
   let gamepiece;
 
   beforeEach(() => {
-    gamepiece = new GamePiece(30, 30, 10, 10, 'green', 'black')
+    gamepiece = new GamePiece(30, 30, 10, 10, 'green', 1, 1, 'black')
   })
 
   it('should take properties', () => {
