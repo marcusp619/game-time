@@ -2,11 +2,30 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Game Time</title>
+  <title>Snake</title>
   <link href='./game.css' rel='stylesheet' type='text/css'/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Press+Start+2P" rel="stylesheet">
 </head>
 <body>
-  <canvas id="game" width="300" height="300"></canvas>
+    <header class="header">
+      <h1 class="header__title">Snake</h1>
+    </header>
+    <section class="game">
+      <div class="game__scoreboard container">
+        <h2>Score</h2>
+        <h2 id="score-display">100</h3>
+      </div>
+      <canvas id="game" class="canvas container" width="500" height="500"></canvas>    
+      <div class="game__lives container">
+        <h2>Lives</h2>
+        <div class="game__hearts">
+          <img class="game__heart" src="img/Heart.png" alt="heart representing one life">
+          <img class="game__heart" src="img/Heart.png" alt="heart representing one life">
+          <img class="game__heart" src="img/Heart.png" alt="heart representing one life">
+        </div>
+      </div>
+    </section>
+      <button class="play-btn container">PLAY</button>
   <script src="main.bundle.js"></script>
 </body>
 </html>
