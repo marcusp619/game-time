@@ -34,6 +34,7 @@ body {
 .game__gameover {
   animation: heartbeat 1.5s infinite alternate ease-in-out;
   background: #FFF;
+  box-shadow: 0 28px 50px rgba(0, 0, 2, 0.5);
   color: #EB4238;
   display: flex;
   display: none;
@@ -47,18 +48,31 @@ body {
   width: 25em;
 }
 
-.play-btn {
+.game__btn {
 	align-items: center;
 	animation: playbutton 2.5s infinite alternate ease-in-out;
 	background-color: #FFF;
 	cursor: pointer;
-  display: flex;
 	font-family: 'Press Start 2P', cursive;
   font-size: 3em;
 	justify-content: center;
 	margin: 1.5rem auto 0;
 	padding: 0.5rem 0;
+}
+
+.game__btn--wide {
+  display: flex;
   width: 500px;
+}
+
+.game__difficulty {
+  display: flex;
+  margin: auto;
+  width: 500px;
+}
+
+.game__btn--med {
+  padding: 1rem;
 }
 
 .container {
