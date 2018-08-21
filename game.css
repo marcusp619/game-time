@@ -1,10 +1,8 @@
 body {
   background: url(img/game_background_1.png) no-repeat center center fixed;
   background-size: cover;
-  font-family: 'Open Sans', sans-serif;
-  
+  font-family: 'Open Sans', sans-serif;  
 }
-
 
 /**** Canvas ****/
 #game {
@@ -30,11 +28,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
+}
+
+.game__gameover {
+  background: #FFF;
+  color: #EB4238;
+  display: flex;
+  display: none;
+  flex-direction: column;
+	font-family: 'Press Start 2P', cursive;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  width: 25em;
 }
 
 .play-btn {
 	align-items: center;
-	/*color: #EB4238;*/
 	animation: playbutton 2.5s infinite alternate ease-in-out;
 	background-color: #FFF;
 	display: flex;
@@ -118,17 +131,15 @@ body {
 	.game__lives {
 		width: 250px;
 	}
-
-
 }
 
 @media (max-width: 1050px) {
 	.game__scoreboard,
 	.game__lives {
 		width: 200px;
-	}
+  }
+  
  .game__heart {
  	width: 2rem;
  }
-
 }
