@@ -26,26 +26,26 @@ describe('GamePiece', () => {
   })
 
   it('should collide with a second gamepiece that occupies the same space', () => {
-    const gamepiece2 = new GamePiece(30, 30, 10, 10, 'green')
+    const gamepiece2 = new GamePiece(30, 30, 10, 10, 'green');
 
     // Execution
     const colliding = gamepiece.isCollidingWith(gamepiece2);
 
     // Assertion
     assert.isTrue(colliding);
-  })
+  });
 
   it('should not collide with a second gamepiece that does not occupy the same space', () => {
-    const gamepiece2 = new GamePiece(130, 130, 10, 10, 'green')
+    const gamepiece2 = new GamePiece(130, 130, 10, 10, 'green');
 
     // Execution
     const colliding = gamepiece.isCollidingWith(gamepiece2);
 
     // Assertion
     assert.isFalse(colliding);
-  })
+  });
 
   // it('should collide with walls', () => {})
   // it('should be able to move', () => {})
   // it('should be able to changeDirection', () => {})
-})
+});
