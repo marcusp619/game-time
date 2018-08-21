@@ -51,7 +51,8 @@ body {
 	align-items: center;
 	animation: playbutton 2.5s infinite alternate ease-in-out;
 	background-color: #FFF;
-	display: flex;
+	cursor: pointer;
+  display: flex;
 	font-family: 'Press Start 2P', cursive;
   font-size: 3em;
 	justify-content: center;
