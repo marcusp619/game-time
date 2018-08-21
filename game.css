@@ -32,6 +32,7 @@ body {
 }
 
 .game__gameover {
+  animation: heartbeat 1.5s infinite alternate ease-in-out;
   background: #FFF;
   color: #EB4238;
   display: flex;
@@ -63,9 +64,9 @@ body {
 	border-radius: 20px;
 }
 
-/**** Scoreboard & Lives ****/
+/**** Scoreboard & instructions ****/
 .game__scoreboard,
-.game__lives {
+.game__instructions {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 28px 50px rgba(0, 0, 2, 0.2);
   color: #301E42;
@@ -77,14 +78,10 @@ body {
   width: 300px;
 }
 
-/**** Lives ****/
-.game__lives {
+/**** Instructions ****/
+.game__instructions {
   justify-content: center;
-}
-
- .game__heart {
-  animation: heartbeat 1.0s infinite alternate ease-in-out; 
-  width: 2.5rem;
+  font-size: 12px
 }
 
 /*** Animation ***/ 
