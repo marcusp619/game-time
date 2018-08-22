@@ -11,27 +11,27 @@
       <h1 class="header__title">Snake</h1>
     </header>
     <section class="game">
-      <div class="game__scoreboard container">
+      <div class="game__scoreboard container" aria-label="game scoreboard">
         <h2>Score</h2>
         <h3 id="game__score">0</h3>
       </div>
       <canvas id="game" class="canvas container" width="500" height="500"></canvas>    
-      <div class="game__instructions container">
+      <div class="game__instructions container" aria-label="game instructions">
         <h2>Instructions</h2>
           <p>Move snake with arrow keys &#8592; &#8593; &#8594; &#8595;</p>
           <p>Snake eats fruit to increase score</p>
           <p>Game Over snake hits wall/self</p>
       </div>
-      <div class="game__gameover container">
+      <div class="game__gameover container" aria-label="game over message">
         <h1>GAMEOVER</h1>
         <h2>Press Spacebar To Try Again</h2>
       </div>
     </section>
-    <button class="game__btn game__btn--wide container">PLAY</button>
-    <div class="game__difficulty">
-      <button id="difficulty-1" class="game__btn game__btn--med container">1</button>
-      <button id="difficulty-2" class="game__btn game__btn--med container">2</button>
-      <button id="difficulty-3" class="game__btn game__btn--med container">3</button>
+    <button class="game__btn game__btn--wide container" aria-label="play button">PLAY</button>
+    <div class="game__difficulty" aria-label="difficulty level buttons">
+      <button id="difficulty-1" class="game__btn game__btn--med container" aria-label="difficulty level 1 button">1</button>
+      <button id="difficulty-2" class="game__btn game__btn--med container" aria-label="difficulty level 2 button">2</button>
+      <button id="difficulty-3" class="game__btn game__btn--med container" aria-label="difficulty level 3 button">3</button>
     </div>
   <script src="main.bundle.js"></script>
 </body>
