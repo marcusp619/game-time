@@ -53,7 +53,9 @@ it('should move tail to head', () => {
 });
 
 it('should grow snake', () => {
-	assert.equal(snake.growSnake())
+	snake.growSnake();
+	console.log(snake.snakeBody);
+	assert.equal(snake.snakeBody.length, 9)
 });
 
 
