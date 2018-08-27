@@ -17,6 +17,7 @@ describe('GamePiece', () => {
       width: 10,
       color: 'green',
       borderColor: 'black',
+      snakeBody: [[30, 30], [40, 30], [30, 30]],
       dx: 1,
       dy: 0,
       dxv: 1,
@@ -33,7 +34,7 @@ describe('GamePiece', () => {
 
     // Assertion
     assert.isTrue(colliding);
-  });
+  })
 
   it('should not collide with a second gamepiece that does not occupy the same space', () => {
     const gamepiece2 = new GamePiece(130, 130, 10, 10, 'green');
@@ -43,9 +44,6 @@ describe('GamePiece', () => {
 
     // Assertion
     assert.isFalse(colliding);
-  });
+  })
 
-  // it('should collide with walls', () => {})
-  // it('should be able to move', () => {})
-  // it('should be able to changeDirection', () => {})
-});
+})
